@@ -1,0 +1,123 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png" />
+
+		<title>Frontend Mentor | Interactive rating component</title>
+
+		<!-- stylesheets -->
+		<link rel="stylesheet" href="style.css" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+			rel="stylesheet" />
+	</head>
+
+	<body>
+		<main class="main-section">
+			<!-- Rating state start -->
+			<div class="ratings-card card">
+				<span class="star-icon">
+					<i class="ri-star-fill"></i>
+				</span>
+				<div class="h-group">
+					<h1>How did we do?</h1>
+					<p
+						>Please let us know how we did with your support
+						request. All feedback is appreciated to help us improve
+						our offering!</p
+					>
+				</div>
+
+				<!-- ratings form -->
+				<form action="#" id="ratings-form">
+					<div class="form-inner-wrapper">
+						<fieldset
+							form="ratings-form"
+							name="rating"
+							class="fieldset-wrapper">
+							<div class="radio-input-container">
+								<input
+									type="radio"
+									class="radio-input"
+									name="rating"
+									id="rating-1"
+									value="1" />
+								<label class="radio-label" for="rating-1"
+									>1</label
+								>
+							</div>
+							<div class="radio-input-container">
+								<input
+									type="radio"
+									class="radio-input"
+									name="rating"
+									id="rating-2"
+									value="2" />
+								<label class="radio-label" for="rating-2"
+									>2</label
+								>
+							</div>
+							<div class="radio-input-container">
+								<input
+									type="radio"
+									class="radio-input"
+									name="rating"
+									id="rating-3"
+									value="3" />
+								<label class="radio-label" for="rating-3"
+									>3</label
+								>
+							</div>
+							<div class="radio-input-container">
+								<input
+									type="radio"
+									class="radio-input"
+									name="rating"
+									id="rating-4"
+									value="4" />
+								<label class="radio-label" for="rating-4"
+									>4</label
+								>
+							</div>
+							<div class="radio-input-container">
+								<input
+									type="radio"
+									class="radio-input"
+									name="rating"
+									id="rating-5"
+									value="5" />
+								<label class="radio-label" for="rating-5"
+									>5</label
+								>
+							</div>
+						</fieldset>
+						<span class="form-error">Please choose an option</span>
+
+						<button type="submit" class="submit-btn">Submit</button>
+					</div>
+				</form>
+			</div>
+			<!-- Rating state end -->
+		</main>
+
+		<footer class="attribution">
+			Challenge by
+			<a
+				href="https://www.frontendmentor.io?ref=challenge"
+				target="_blank"
+				>Frontend Mentor</a
+			>. Coded by <a href="#">Your Name Here</a>.
+		</footer>
+
+		<script src="./script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,180 @@
+/** @format */
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+:root {
+	--Very-Dark-Blue: hsl(216, 12%, 8%);
+	--Medium-Grey: hsl(216, 12%, 54%);
+	--Dark-Blue: hsl(213, 19%, 18%);
+	--Orange: hsl(25, 97%, 53%);
+	--Light-Grey: hsl(217, 12%, 63%);
+	--orangish-red: hsl(0, 97%, 33%);
+}
+
+body {
+	margin: 0;
+	background-color: var(--Very-Dark-Blue);
+	color: white;
+	font-family: "Overpass", sans-serif;
+}
+
+/* page main section */
+.main-section {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-block: 11rem;
+	padding-inline: 1.5rem;
+}
+
+.card {
+	background-color: var(--Dark-Blue);
+	padding: min(8vw, 2rem) min(6vw, 1.5rem);
+	border-radius: 1rem;
+	max-width: 20.96rem;
+	box-sizing: border-box;
+}
+
+.hidden-card {
+	display: none;
+}
+
+/* Ratings card */
+
+.star-icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 1rem;
+	height: 1rem;
+	padding: 0.7rem;
+	border-radius: 50%;
+	color: var(--Orange);
+	background-color: hsla(216, 12%, 54%, 0.15);
+}
+
+.ratings-card .h-group h1 {
+	font-size: 1.5rem;
+}
+
+.ratings-card .h-group p,
+.appreciation-message p {
+	font-size: 0.938rem;
+	color: var(--Light-Grey);
+	line-height: 1.3rem;
+}
+
+/* ratings form */
+.form-inner-wrapper {
+	position: relative;
+}
+
+.fieldset-wrapper {
+	border: none;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 3rem;
+	display: flex;
+	gap: min(12vw, 3rem);
+}
+
+.radio-input-container {
+	position: relative;
+}
+
+.radio-input {
+	margin: 0;
+	padding: 0;
+	transform: scale(0);
+}
+
+.radio-input:checked + .radio-label {
+	background-color: var(--Orange);
+}
+
+.radio-label {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: min(11.2vw, 2.8rem);
+	height: min(11.2vw, 2.8rem);
+	border-radius: 50%;
+	background-color: hsla(216, 12%, 54%, 0.15);
+	cursor: pointer;
+}
+
+.radio-label:hover {
+	background-color: var(--Medium-Grey);
+}
+
+.form-error {
+	text-align: center;
+	font-size: 0.8rem;
+	color: var(--Orange);
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translateX(-50%);
+	display: none;
+}
+
+.form-error.active {
+	display: block;
+}
+
+.submit-btn {
+	display: block;
+	width: 100%;
+	background-color: var(--Orange);
+	color: white;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 1.03rem;
+	letter-spacing: 2px;
+	padding-block: 0.8rem;
+	border-radius: 2rem;
+	cursor: pointer;
+}
+
+.submit-btn:is(:hover, :focus, :active) {
+	color: var(--Orange);
+	background-color: white;
+}
+
+/* Appreciating card */
+.appreciation-card {
+	text-align: center;
+}
+
+.success-image-container {
+	margin-bottom: 1.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.submitted-form-info {
+	background-color: hsla(216, 12%, 54%, 0.2);
+	color: var(--Orange);
+	width: fit-content;
+	margin: auto;
+	font-size: 0.85rem;
+	padding-inline: 0.7rem;
+	padding-block: 0.5rem;
+	border-radius: 0.9rem;
+	margin-bottom: 2rem;
+}
+
+.appreciation-message h1 {
+	font-size: 1.5rem;
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
